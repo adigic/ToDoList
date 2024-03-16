@@ -10,6 +10,7 @@
   margin: 0px;
 }
 
+
 form {
   display: flex;
   justify-content: center;
@@ -72,10 +73,22 @@ h4 {
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
   margin-right: 55px;
+  color: #ffdd78;
+  
+}
+
+.yellow{
+  color: #ffdd78;
+  margin: 0;
+}
+
+.do{
+  color: #86bdd0;
 }
 
 ul {
@@ -101,11 +114,14 @@ li {
   background-color: #ffdd78;
   font-weight: 500;
   padding: 10px;
-  text-transform: capitalize;
   list-style: none;
   animation: fadeIn 0.5s ease-in-out;
   text-decoration: none;
   cursor: pointer;
+}
+
+.notask{
+  font-weight: 500;
 }
 
 @keyframes fadeIn {

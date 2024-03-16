@@ -16,12 +16,14 @@ function WelcomePage() {
     const handleChange = (event) => {
         setName(event.target.value);
     };
-
+    
+    
     return (
 <div>
     <form onSubmit={handleWelcome}>
+        <h3 className='yellow'>TO<span className='do'>DO</span>LIST</h3>
         <label>
-            <input type="text" value={name} onChange={handleChange} placeholder='Please enter your name' className='nameInput' required/>
+            <input type="text" value={name} onChange={handleChange} placeholder='Please enter a name' className='nameInput' required/>
         </label>
         <button type="submit">
             Create to-do list

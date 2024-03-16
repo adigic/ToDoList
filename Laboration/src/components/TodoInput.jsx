@@ -16,12 +16,12 @@ const TodoInput = ({addTodo}) => {
     };
 
   return ( 
-    <div>
-    <form className='TodoForm' onSubmit={handleSubmit}>
+    <div className='form'>
+    <form className='TodoForm' onSubmit={handleSubmit}>    
     <input 
     type="text"
     className="todo-input"
-    placeholder='What is the new task?'
+    placeholder='What would you like to add?'
     value={todoText}
     onChange={handleChange} />
 

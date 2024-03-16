@@ -20,9 +20,11 @@ function TodoPage() {
     }
 
     const addTodo = (todoText) => {
+        // För att första bokstaven i meningen ska vara stor.
+        const capitalLetter = todoText.charAt(0).toUpperCase() + todoText.slice(1);
         const newTodo = {
-            id: Date.now(),
-            text: todoText,
+            id: Math.random(),
+            text: capitalLetter,
             completed: false
     };
     setTodos([...todos, newTodo]);
@@ -43,10 +45,11 @@ function TodoPage() {
         <button onClick={handleReturn}><FontAwesomeIcon icon={faArrowLeft} className='returnBtn'/></button>
         </div>
         <div className="header">
-        <h2 className='welcome'>Welcome {name}</h2>
+        <h2 className='welcome'>{name}</h2>
         </div>
         <TodoInput addTodo={addTodo}/>
         <div>
+            
             {todos.length > 0 ? (
                 <ul>
                     {todos.map(todo => (
@@ -59,7 +62,7 @@ function TodoPage() {
                     ))}
                 </ul>
             ) : (
-                <p>No tasks available.</p>
+                <p className='notask'>No tasks available.</p>
             )}
         </div>
     

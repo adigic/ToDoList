@@ -32,7 +32,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #ffe4b3;
+ /*  background-color: #ffe4b3; */
+  background-image: url(/src/assets/test.avif);
 }
 
 h1 {
@@ -47,7 +48,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #ffd000;
+  background-color: #ffdd78;
   cursor: pointer;
   transition: border-color 0.25s;
   color: black;
@@ -56,7 +57,7 @@ button {
 }
 
 input {
-  border: 1px solid #ffd000;
+  border: 1px solid #ffdd78;
   background-color: rgb(66, 66, 66);
   width: 200px;
 }
