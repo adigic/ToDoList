@@ -5,31 +5,131 @@
   text-align: center;
 }
 
-form{
+.welcome {
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  padding: 40px;
+  background-color: rgb(66, 66, 66);
+  width: 400px;
+  border-radius: 10px;
 }
 
-label{
+.TodoForm {
+  flex-direction: row;
+  gap: 0;
+}
+
+.TodoForm input {
+  width: 300px;
+}
+
+.todo-btn{
+  padding-inline: 30px;
+}
+
+label {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
   font-size: 16px;
+  color: white;
 }
 
-input{
-  padding: 5px;
+input {
+  padding: 10px;
+}
+
+.nameInput {
   text-align: center;
 }
 
-.next{ 
+.next {
   margin-left: 10px;
 }
 
+h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.return {
+  float: left;
+  align-items: center;
+}
+
+.return button {
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-right: 55px;
+}
+
+ul {
+  background-color: rgb(66, 66, 66);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.tasks {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 10px;
+}
+
+li {
+  background-color: #ffdd78;
+  font-weight: 500;
+  padding: 10px;
+  text-transform: capitalize;
+  list-style: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.tasks span {
+  float: left;
+}
+
+.tasks i {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tasks i:hover {
+  color: #484848;
+}
 
 @keyframes logo-spin {
   from {

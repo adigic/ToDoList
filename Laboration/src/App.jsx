@@ -1,13 +1,19 @@
-import { useState } from 'react'
 import './App.css'
-import Form from './components/Form.jsx'
+import WelcomePage from './components/WelcomePage'
+import TodoPage from './components/TodoPage'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
 
   return (
+    <BrowserRouter>
     <>
-    <Form />
+    <Routes>
+      <Route exact path="/" element={<WelcomePage/>}/>
+      <Route exact path="/Todo" element={<TodoPage/>}/>
+    </Routes>
     </>
+    </BrowserRouter>
   )
 }
 
