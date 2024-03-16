@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const TodoInput = ({addTodo}) => {
     const[todoText, setTodoText] = useState("");

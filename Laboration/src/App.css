@@ -104,6 +104,8 @@ li {
   text-transform: capitalize;
   list-style: none;
   animation: fadeIn 0.5s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @keyframes fadeIn {

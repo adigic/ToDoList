@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import '../App.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
@@ -11,22 +10,29 @@ const Todo = ({todo, toggleComplete, removeTodo}) => {
         toggleComplete(id);
     }
 
-    const handleRemoveTodo = () => {
+    const handleRemove = () => {
         removeTodo(id);
     }
+
+
+       const styleCompleted = () => {
+        return {
+            textDecoration: completed ? 'line-through' : 'none',
+            backgroundColor: completed ? '#c3a95e' : '#ffdd78'
+        };
+    };
 
     return (
 
         <div>
             <div className='tasks'>
-                <li style={{ textDecoration: completed ? 'line-through' : 'none'}}>
-                    <span onClick={handleToggleComplete}>{text}
+                <li style={styleCompleted()}>
+                    <span onClick={handleToggleComplete} style={styleCompleted()}>{text}
                     </span>
-                    <i onClick={handleRemoveTodo}><FontAwesomeIcon icon={faTrash}/></i>
+                    <i onClick={handleRemove}><FontAwesomeIcon icon={faTrash}/></i>
                     </li>
 
             </div>
-
             </div>
 
         
